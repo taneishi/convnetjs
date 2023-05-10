@@ -1,4 +1,3 @@
-
 # ConvNetJS
 
 ConvNetJS is a Javascript implementation of Neural networks, together with nice browser-based demos. It currently supports:
@@ -13,6 +12,7 @@ For much more information, see the main page at [convnetjs.com](http://convnetjs
 **Note**: I am not actively maintaining ConvNetJS anymore because I simply don't have time. I think the npm repo might not work at this point.
 
 ## Online Demos
+
 - [Convolutional Neural Network on MNIST digits](http://cs.stanford.edu/~karpathy/convnetjs/demo/mnist.html)
 - [Convolutional Neural Network on CIFAR-10](http://cs.stanford.edu/~karpathy/convnetjs/demo/cifar10.html)
 - [Toy 2D data](http://cs.stanford.edu/~karpathy/convnetjs/demo/classify2d.html)
@@ -91,6 +91,7 @@ var output_probabilities_vol = net.forward(x)
 ```
 
 ## Getting Started
+
 A [Getting Started](http://cs.stanford.edu/people/karpathy/convnetjs/started.html) tutorial is available on main page.
 
 The full [Documentation](http://cs.stanford.edu/people/karpathy/convnetjs/docs.html) can also be found there.
@@ -101,18 +102,26 @@ See the **releases** page for this project to get the minified, compiled library
 - [convnet-min.js](http://cs.stanford.edu/people/karpathy/convnetjs/build/convnet-min.js)
 
 ## Compiling the library from src/ to build/
+
 If you would like to add features to the library, you will have to change the code in `src/` and then compile the library into the `build/` directory. The compilation script simply concatenates files in `src/` and then minifies the result.
 
 The compilation is done using an ant task: it compiles `build/convnet.js` by concatenating the source files in `src/` and then minifies the result into `build/convnet-min.js`. Make sure you have **ant** installed (on Ubuntu you can simply *sudo apt-get install* it), then cd into `compile/` directory and run:
 
     $ ant -lib yuicompressor-2.4.8.jar -f build.xml
 
+or
+
+    $ java -jar compile/yuicompressor-2.4.8.jar -o build/convnet.js src/*.js
+
 The output files will be in `build/`
+
 ## Use in Node
+
 The library is also available on *node.js*:
 
 1. Install it: `$ npm install convnetjs`
 2. Use it: `var convnetjs = require("convnetjs");`
 
 ## License
+
 MIT
