@@ -96,10 +96,9 @@ A [Getting Started](http://cs.stanford.edu/people/karpathy/convnetjs/started.htm
 
 The full [Documentation](http://cs.stanford.edu/people/karpathy/convnetjs/docs.html) can also be found there.
 
-See the **releases** page for this project to get the minified, compiled library, and a direct link to is also available below for convenience (but please host your own copy)
+See the **releases** page for this project to get the minified, compiled library.
 
-- [convnet.js](http://cs.stanford.edu/people/karpathy/convnetjs/build/convnet.js)
-- [convnet-min.js](http://cs.stanford.edu/people/karpathy/convnetjs/build/convnet-min.js)
+- [convnet-min.js](build/convnet-min.js)
 
 ## Compiling the library from src/ to build/
 
@@ -111,7 +110,8 @@ The compilation is done using an ant task: it compiles `build/convnet.js` by con
 
 or
 
-    $ cat src/*.js > build/convnet.js
+    $ cat src/convnet_init.js src/convnet_util.js src/convnet_vol*.js src/convnet_layers*.js \
+        src/convnet_net.js src/convnet_trainers.js src/convnet_magicnet.js src/convnet_export.js > build/convnet.js
     $ java -jar compile/yuicompressor-2.4.8.jar -o build/convnet-min.js build/convnet.js
 
 The output files will be in `build/`
