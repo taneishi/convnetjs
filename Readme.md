@@ -13,14 +13,14 @@ For much more information, see the main page at [convnetjs.com](http://convnetjs
 
 ## Online Demos
 
-- [Convolutional Neural Network on MNIST digits](http://cs.stanford.edu/~karpathy/convnetjs/demo/mnist.html)
-- [Convolutional Neural Network on CIFAR-10](http://cs.stanford.edu/~karpathy/convnetjs/demo/cifar10.html)
-- [Toy 2D data](http://cs.stanford.edu/~karpathy/convnetjs/demo/classify2d.html)
-- [Toy 1D regression](http://cs.stanford.edu/~karpathy/convnetjs/demo/regression.html)
-- [Training an Autoencoder on MNIST digits](http://cs.stanford.edu/~karpathy/convnetjs/demo/autoencoder.html)
-- [Deep Q Learning Reinforcement Learning demo](http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html)
-- [Image Regression ("Painting")](http://cs.stanford.edu/~karpathy/convnetjs/demo/image_regression.html)
-- [Comparison of SGD/Adagrad/Adadelta on MNIST](http://cs.stanford.edu/people/karpathy/convnetjs/demo/trainers.html)
+- [Convolutional Neural Network on MNIST digits](demo/mnist.html)
+- [Convolutional Neural Network on CIFAR-10](demo/cifar10.html)
+- [Toy 2D data](demo/classify2d.html)
+- [Toy 1D regression](demo/regression.html)
+- [Training an Autoencoder on MNIST digits](demo/autoencoder.html)
+- [Deep Q Learning Reinforcement Learning demo](demo/rldemo.html)
+- [Image Regression ("Painting")](demo/image_regression.html)
+- [Comparison of SGD/Adagrad/Adadelta on MNIST](demo/trainers.html)
 
 ## Example Code
 
