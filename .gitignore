@@ -1,4 +1,3 @@
-build/convnet.js
 demo/mnist/mnist.pkl.gz
 demo/mnist/mnist_labels.js
 demo/mnist/*.png
