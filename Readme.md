@@ -111,7 +111,8 @@ The compilation is done using an ant task: it compiles `build/convnet.js` by con
 
 or
 
-    $ java -jar compile/yuicompressor-2.4.8.jar -o build/convnet.js src/*.js
+    $ cat src/*.js > build/convnet.js
+    $ java -jar compile/yuicompressor-2.4.8.jar -o build/convnet-min.js build/convnet.js
 
 The output files will be in `build/`
 
