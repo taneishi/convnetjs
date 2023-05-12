@@ -1,5 +1,17 @@
 # ConvNetJS
 
+## Note
+
+ConvNetJS is a javascript implementation of deep learning created by Andrej Karpathy;
+it was releaseed by 2014 and does not include any further developments in deep learning since then (with the comment that he ran out of time).
+
+Since it is a javascript implementation, even if hardware acceleration were available, it is not very practical at this time.
+However, it is an excellent demo to easily understand early deep learning concepts.
+
+It is still hosted at convnetjs.com, but I made some changes so that the demo is only available on github.
+
+## Original Readme
+
 ConvNetJS is a Javascript implementation of Neural networks, together with nice browser-based demos. It currently supports:
 
 - Common **Neural Network modules** (fully connected layers, non-linearities)
@@ -102,17 +114,13 @@ See the **releases** page for this project to get the minified, compiled library
 
 ## Compiling the library from src/ to build/
 
-If you would like to add features to the library, you will have to change the code in `src/` and then compile the library into the `build/` directory. The compilation script simply concatenates files in `src/` and then minifies the result.
+If you would like to add features to the library, you will have to change the code in `src/` and then compile the library into the `build/` directory.
+The compilation script simply concatenates files in `src/` and then minifies the result.
 
-The compilation is done using an ant task: it compiles `build/convnet.js` by concatenating the source files in `src/` and then minifies the result into `build/convnet-min.js`. Make sure you have **ant** installed (on Ubuntu you can simply *sudo apt-get install* it), then cd into `compile/` directory and run:
+The compilation is done using an ant task: it compiles `build/convnet.js` by concatenating the source files in `src/` and then minifies the result into `build/convnet-min.js`.
+Make sure you have **ant** installed (on Ubuntu you can simply *sudo apt-get install* it), then cd into `compile/` directory and run:
 
     $ ant -lib yuicompressor-2.4.8.jar -f build.xml
-
-or
-
-    $ cat src/convnet_init.js src/convnet_util.js src/convnet_vol*.js src/convnet_layers*.js \
-        src/convnet_net.js src/convnet_trainers.js src/convnet_magicnet.js src/convnet_export.js > build/convnet.js
-    $ java -jar compile/yuicompressor-2.4.8.jar -o build/convnet-min.js build/convnet.js
 
 The output files will be in `build/`
 
