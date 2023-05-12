@@ -1,6 +1,7 @@
 import numpy as np
 import gzip
 import pickle
+#from scipy.misc import imsave
 from PIL import Image
 from imageio import imwrite as imsave
 

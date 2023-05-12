@@ -1,2 +1,4 @@
 build/convnet.js
 demo/mnist/mnist.pkl.gz
+demo/cifar10/cifar-10-python.tar.gz
+demo/cifar10/cifar-10-batches-py/
